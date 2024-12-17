@@ -1,0 +1,106 @@
+body {
+    background-color: peru;
+  
+  }
+  
+  
+  .container1 {
+    border: 1px black solid;
+    border: none;
+    height: 58px;
+    display: flex;
+    gap: 400px;
+    justify-content: center;
+    padding: 5px;
+    /* background-color: black; */
+  }
+  
+  
+  .fb,
+  .insta {
+    height: 30px;
+    width: 20%;
+  }
+  
+  .nav-item {
+    position: relative;
+    list-style: none;
+  }
+  
+  .nav-item::before,
+  .nav-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: transparent;
+    border-top: 1px dotted #ffffff;
+    /* Apply dotted style */
+    display: block;
+    width: calc(100% - 40px);
+    /* Adjust the width to create a gap */
+    margin: 0 auto;
+    /* Center the lines */
+  }
+  
+  .nav-item::before {
+    top: -10px;
+    /* Adjust the position of the top dotted line and add a gap */
+  }
+  
+  .nav-item::after {
+    bottom: -10px;
+    /* Adjust the position of the bottom dotted line and add a gap */
+  }
+  
+  .navigation-parent {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navi {
+    position: fixed;
+    top: 70px;
+    z-index: 2;
+    background-color: red;
+  }
+  
+  .navbar-brand img {
+    width: 200px;
+  }
+  
+  .navbar-nav {
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  
+  .navbar .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1.1em;
+    padding: 0.5em 1em;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .navbar-brand img {
+      width: 100px;
+    }
+  
+    .navbar-brand {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0 1em;
+    }
+  }
+  
+  .nav2 {
+    height: 60px;
+    /* width: 30%; */
+  }
+  
+  .nav2 img {
+    height: 100%;
+    width: 100%;
+  }
+  
+ 
